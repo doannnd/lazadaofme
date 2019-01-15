@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+
+    <item
+        android:id="@+id/menu_action_shopping_cart"
+        android:icon="@drawable/ic_menu_shopping_cart"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/title_menu_shopping_cart"
+        app:actionLayout="@layout/view_shopping_cart"/>
+
+    <item
+        android:id="@+id/menu_action_more"
+        android:icon="@drawable/ic_menu_more"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:title="@string/title_menu_more">
+
+        <menu>
+
+            <group>
+                <item
+                    android:id="@+id/menu_action_login"
+                    android:icon="@drawable/ic_menu_login"
+                    app:showAsAction="never"
+                    android:title="@string/title_menu_login"/>
+
+                <item
+                    android:id="@+id/menu_action_notification"
+                    android:icon="@drawable/ic_menu_notification"
+                    app:showAsAction="never"
+                    android:title="@string/title_menu_notification"/>
+
+                <item
+                    android:id="@+id/menu_action_wish_list"
+                    android:icon="@drawable/ic_menu_wish_list"
+                    app:showAsAction="never"
+                    android:title="@string/title_menu_wish_list"/>
+
+                <item
+                    android:id="@+id/menu_action_order_me"
+                    android:icon="@drawable/ic_action_order_me"
+                    app:showAsAction="never"
+                    android:title="@string/title_menu_order_me"/>
+
+                <item
+                    android:id="@+id/menu_action_setting"
+                    android:icon="@drawable/ic_menu_setting"
+                    app:showAsAction="never"
+                    android:title="@string/title_menu_setting"/>
+            </group>
+
+            <group>
+                <item
+                    android:id="@+id/menu_action_policy"
+                    android:icon="@drawable/ic_menu_policy"
+                    app:showAsAction="never"
+                    android:title="@string/title_menu_policy"/>
+
+                <item
+                    android:id="@+id/menu_action_help"
+                    android:icon="@drawable/ic_menu_help"
+                    app:showAsAction="never"
+                    android:title="@string/title_menu_help"/>
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

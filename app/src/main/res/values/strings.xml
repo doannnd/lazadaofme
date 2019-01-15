@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">lazadaofme</string>
+
+    <!-- label slogan splash screen-->
+    <string name="label_slogan_first">Shopping world at your fingertips</string>
+    <string name="label_slogan_second">Delivery + easy payment</string>
+    <string name="label_slogan_three">100% guarantee about consumers</string>
+
+    <!-- label search button-->
+    <string name="label_search_primary">Search in Lazada</string>
+
+    <!-- title menu item-->
+    <string name="title_menu_search">Search</string>
+    <string name="title_menu_shopping_cart">Shopping cart</string>
+    <string name="title_menu_more">More</string>
+    <string name="title_menu_login">Login</string>
+    <string name="title_menu_notification">Notification</string>
+    <string name="title_menu_wish_list">Wish list</string>
+    <string name="title_menu_order_me">Order of me</string>
+    <string name="title_menu_setting">Setting</string>
+    <string name="title_menu_policy">Policy</string>
+    <string name="title_menu_help">Help</string>
+    <string name="label_default_shopping_cart">1</string>
+
+    <!-- content description icon-->
+    <string name="cdi_cs_logo">gwd_cs_logo</string>
+    <string name="cdi_cs_bag">gwd_cs_bag</string>
+    <string name="cdi_cs_money">gwd_cs_money</string>
+    <string name="cdi_cs_security">gwd_cs_security</string>
+    <string name="cdi_email_clear">gwd_email_clear</string>
+    <string name="cdi_login_facebook">gwd_login_facebook</string>
+    <string name="cdi_login_google">gwd_login_google</string>
+    <string name="cdi_logo">gwd_logo</string>
+    <string name="cdi_menu_help">gwd_menu_help</string>
+    <string name="cdi_menu_wish_list">gwd_menu_wish_list</string>
+    <string name="cdi_menu_login">gwd_menu_login</string>
+    <string name="cdi_menu_more">gwd_menu_more</string>
+    <string name="cdi_menu_notification">gwd_menu_notification</string>
+    <string name="cdi_menu_order_me">gwd_menu_order_me</string>
+    <string name="cdi_menu_policy">gwd_menu_policy</string>
+    <string name="cdi_menu_setting">gwd_menu_setting</string>
+    <string name="cdi_menu_shopping_cart">gwd_menu_shopping_card</string>
+    <string name="cdi_menu_exit">gwd_menu_exit</string>
+    <string name="cdi_nav_close">gwd_nav_close</string>
+    <string name="cdi_nav_open">gwd_nav_close</string>
+    <string name="cdi_password_invisible">gwd_password_invisible</string>
+    <string name="cdi_password_visible">gwd_password_visible</string>
+    <string name="cdi_search">gwd_search</string>
+    <string name="cdi_camera">gwd_camera</string>
+
+    <!-- label tab layout-->
+    <string name="label_tab_electronic">Electronic</string>
+    <string name="label_tab_fashion">Fashion</string>
+    <string name="label_tab_highlight">Highlight</string>
+    <string name="label_tab_home_and_life">Home And Life</string>
+    <string name="label_tab_make_up">Make up</string>
+    <string name="label_tab_mother_and_baby">Mother And Baby</string>
+    <string name="label_tab_promotion">Promotion</string>
+    <string name="label_tab_sport_and_tourism">Sport And Tourism</string>
+    <string name="label_tab_trademark">Trademark</string>
+    <string name="label_tab_login">Login</string>
+    <string name="label_tab_register">Register</string>
+    <string name="label_tab_unknown">Unknown</string>
+
+    <!-- navigation drawer -->
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+
+    <!-- label title toolbar -->
+    <string name="label_title_toolbar">Login / Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

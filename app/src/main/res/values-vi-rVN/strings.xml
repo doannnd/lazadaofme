@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Label app name-->
+    <string name="app_name">lazadaofme</string>
+
+    <string name="label_slogan_first">Thế giới mua sắm trong tầm tay bạn</string>
+    <string name="label_slogan_second">Giao hàng tận nơi + thanh toán dễ dàng</string>
+    <string name="label_slogan_three">100% bảo về người tiêu dùng</string>
+
+    <!-- label button search-->
+    <string name="label_search_primary">Tìm kiếm trên Lazada</string>
+
+    <!-- label menu item-->
+    <string name="title_menu_search">Tìm kiếm</string>
+    <string name="title_menu_shopping_cart">Giỏ hàng</string>
+    <string name="title_menu_more">Thêm</string>
+    <string name="title_menu_login">Đăng nhập</string>
+    <string name="title_menu_notification">Thông báo</string>
+    <string name="title_menu_wish_list">Danh sách  mong muốn</string>
+    <string name="title_menu_order_me">Đơn hàng của tôi</string>
+    <string name="title_menu_setting">Cài đặt</string>
+    <string name="title_menu_policy">Chính sách</string>
+    <string name="title_menu_help">Giúp đỡ</string>
+    <string name="label_default_shopping_cart">1</string>
+
+    <!-- content description icon-->
+    <string name="cdi_cs_logo">gwd_cs_logo</string>
+    <string name="cdi_cs_bag">gwd_cs_bag</string>
+    <string name="cdi_cs_money">gwd_cs_money</string>
+    <string name="cdi_cs_security">gwd_cs_security</string>
+    <string name="cdi_email_clear">gwd_email_clear</string>
+    <string name="cdi_login_facebook">gwd_email_clear</string>
+    <string name="cdi_login_google">gwd_login_google</string>
+    <string name="cdi_logo">gwd_logo</string>
+    <string name="cdi_menu_help">gwd_menu_help</string>
+    <string name="cdi_menu_wish_list">gwd_menu_wish_list</string>
+    <string name="cdi_menu_login">gwd_menu_login</string>
+    <string name="cdi_menu_more">gwd_menu_more</string>
+    <string name="cdi_menu_notification">gwd_menu_notification</string>
+    <string name="cdi_menu_order_me">gwd_menu_order_me</string>
+    <string name="cdi_menu_policy">gwd_menu_policy</string>
+    <string name="cdi_menu_setting">gwd_menu_setting</string>
+    <string name="cdi_menu_shopping_cart">gwd_menu_shopping_card</string>
+    <string name="cdi_menu_exit">gwd_menu_exit</string>
+    <string name="cdi_nav_close">gwd_nav_close</string>
+    <string name="cdi_nav_open">gwd_nav_close</string>
+    <string name="cdi_password_visible">gwd_password_visible</string>
+    <string name="cdi_password_invisible">gwd_password_invisible</string>
+    <string name="cdi_search">gwd_search</string>
+    <string name="cdi_camera">gwd_camera</string>
+
+    <!-- label tab layout-->
+    <string name="label_tab_electronic">Điện tử</string>
+    <string name="label_tab_fashion">Thời trang</string>
+    <string name="label_tab_highlight">Nổi bật</string>
+    <string name="label_tab_home_and_life">Nhà cửa và đời sống</string>
+    <string name="label_tab_make_up">Trang điểm</string>
+    <string name="label_tab_mother_and_baby">Mẹ và bé</string>
+    <string name="label_tab_promotion">Chương trình khuyến mãi</string>
+    <string name="label_tab_sport_and_tourism">Thể thao và du lịch</string>
+    <string name="label_tab_trademark">Thương hiệu</string>
+    <string name="label_tab_login">Đăng nhập</string>
+    <string name="label_tab_register">Đăng ký</string>
+    <string name="label_tab_unknown">Chưa biết</string>
+
+    <!-- navigation drawer-->
+    <string name="nav_drawer_open">Mở navigaition drawer</string>
+    <string name="nav_drawer_close">Đóng navigation drawer</string>
+
+    <!-- label title toolbar -->
+    <string name="label_title_toolbar">Đăng nhập / Đăng ký</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

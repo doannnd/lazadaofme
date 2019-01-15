@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- style text view splash activity-->
+    <style name="SplashTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/padding_small</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- style image view splash activity-->
+    <style name="SplashImageView">
+        <item name="android:layout_width">@dimen/icon_size_medium</item>
+        <item name="android:layout_height">@dimen/icon_size_medium</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!-- Set text all caps in tab layout is false -->
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!-- Set divider in menu item -->
+    <style name="OptionMenuDivider" parent="Base.Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">@color/colorGray</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_sc_background"
+    android:alpha="0.9"
+    tools:context=".activities.SplashActivity">
+
+    <!-- the transparent background with orange color has opacity code is 20-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30FF9800">
+
+        <ImageView
+            android:id="@+id/activity_splash_imv_bag"
+            android:layout_marginTop="@dimen/padding_huge"
+            android:src="@drawable/ic_sc_bag"
+            style="@style/SplashImageView"
+            android:contentDescription="@string/cdi_cs_bag"/>
+
+        <TextView
+            android:id="@+id/activity_splash_tv_slogan_first"
+            android:layout_below="@id/activity_splash_imv_bag"
+            android:text="@string/label_slogan_first"
+            style="@style/SplashTextView"/>
+
+        <ImageView
+            android:id="@+id/activity_splash_imv_money"
+            android:layout_below="@id/activity_splash_tv_slogan_first"
+            android:layout_marginTop="@dimen/padding_xxxlarge"
+            android:src="@drawable/ic_sc_money"
+            android:contentDescription="@string/cdi_cs_money"
+            style="@style/SplashImageView"/>
+
+        <TextView
+            android:id="@+id/activity_splash_tv_slogan_second"
+            android:layout_below="@id/activity_splash_imv_money"
+            android:text="@string/label_slogan_second"
+            style="@style/SplashTextView"/>
+
+        <ImageView
+            android:id="@+id/activity_splash_imv_security"
+            android:layout_below="@id/activity_splash_tv_slogan_second"
+            android:layout_marginTop="@dimen/padding_xxxlarge"
+            android:src="@drawable/ic_sc_security"
+            android:contentDescription="@string/cdi_cs_security"
+            style="@style/SplashImageView"/>
+
+        <TextView
+            android:id="@+id/activity_splash_tv_slogan_three"
+            android:layout_below="@id/activity_splash_imv_security"
+            android:text="@string/label_slogan_three"
+            style="@style/SplashTextView"/>
+
+        <ImageView
+            android:layout_width="@dimen/icon_size_huge"
+            android:layout_height="@dimen/icon_size_standard"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/padding_large"
+            android:src="@drawable/ic_sc_lazada_logo"
+            android:contentDescription="@string/cdi_cs_logo"
+            style="@style/SplashImageView"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

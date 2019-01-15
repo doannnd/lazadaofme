@@ -1,4 +1,4 @@
-# Table of Contents
+## Table of Contents
 
 * [Introduction](#introduction)
 * [Demo](#demo)
@@ -6,12 +6,12 @@
 * [Contributing](#contributing)
 * [License](#license)
 
-# Introduction
+## Introduction
 
-# Demo
+## Demo
 
-# Technology
+## Technology
 
-# Contributing
+## Contributing
 
-# License
+## License

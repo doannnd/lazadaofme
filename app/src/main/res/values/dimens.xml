@@ -59,4 +59,7 @@
     <!-- Option menu -->
     <dimen name="divider_height">0.2dp</dimen>
 
+    <!-- Edit text email height -->
+    <dimen name="edit_text_email_height">50dp</dimen>
+
 </resources>

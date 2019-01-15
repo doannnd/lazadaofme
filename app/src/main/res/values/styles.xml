@@ -29,5 +29,11 @@
         <item name="android:dividerHeight">@dimen/divider_height</item>
     </style>
 
+    <!-- text -->
+    <style name="TextInputLayoutTextAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
 
 </resources>

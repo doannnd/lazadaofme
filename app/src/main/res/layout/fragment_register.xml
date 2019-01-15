@@ -1,12 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
     android:background="@color/colorWhite"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_large"
+    android:paddingLeft="@dimen/padding_large"
+    android:paddingRight="@dimen/padding_large">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/label_tv_enter_all_item"
+        android:textColor="@color/colorBlack"/>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_standard"
+        app:hintTextAppearance="@style/TextInputLayoutTextAppearance">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_full_name"
+            android:textSize="@dimen/text_size_toolbar"
+            android:inputType="text"
+            android:maxLength="32"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_standard"
+        app:hintTextAppearance="@style/TextInputLayoutTextAppearance">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email_address"
+            android:textSize="@dimen/text_size_toolbar"
+            android:inputType="textEmailAddress"
+            android:maxLength="32"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_standard"
+        app:hintTextAppearance="@style/TextInputLayoutTextAppearance"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorGrayLight">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:textSize="@dimen/text_size_toolbar"
+            android:inputType="textPassword"
+            android:maxLength="12"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_gravity="start"
+        android:text="@string/label_tv_term_password"
+        android:textColor="@color/colorGray"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_standard"
+        app:hintTextAppearance="@style/TextInputLayoutTextAppearance"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorGrayLight">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_repeat_password"
+            android:textSize="@dimen/text_size_toolbar"
+            android:inputType="textPassword"
+            android:maxLength="12"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_standard"
+        android:layout_gravity="end"
+        android:text="@string/label_sw_term_promotion"
+        android:checked="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_standard"
+        android:background="@color/colorOrangeDark"
+        android:text="@string/label_btn_register"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:text="@string/label_tv_term_policy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_standard"
+        android:text="@string/label_tv_or_register_with"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_facebook"
+            android:text="@string/label_btn_login_facebook"
+            android:textColor="@color/colorBlue"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:drawableLeft="@drawable/ic_login_facebook"
+            android:drawableStart="@drawable/ic_login_facebook"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginStart="@dimen/padding_medium"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_google"
+            android:text="@string/label_btn_login_google"
+            android:textColor="@color/colorRed"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:drawableLeft="@drawable/ic_login_google"
+            android:drawableStart="@drawable/ic_login_google"/>
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -72,15 +72,25 @@
 
     <string name="hint_email_address">Địa chỉ email</string>
     <string name="hint_password">Mật khẩu</string>
+    <string name="hint_full_name">Họ tên đầy đủ</string>
+    <string name="hint_repeat_password">Nhập lại mật khẩu</string>
 
     <!-- label text view -->
     <string name="label_tv_forgot_password">Quên mật khẩu ?</string>
     <string name="label_tv_or_login_with">Hoặc đăng nhập bằng</string>
+    <string name="label_tv_or_register_with">Hoặc đăng ký bằng</string>
+    <string name="label_tv_enter_all_item">Cần điền tất cả các mục</string>
+    <string name="label_tv_term_password">Mật khẩu phải bao gồm ít nhất 6 kí tự và 1 chữ hoa</string>
+    <string name="label_tv_term_policy">Tôi đã đọc và hiểu rõ các <u><font color="blue">điều khoản</font></u> <u><font color="blue">bảo mật</font></u> của Lazada</string>
 
     <!-- label button -->
     <string name="label_btn_login">Đăng nhập</string>
+    <string name="label_btn_register">Đăng ký</string>
     <string name="label_btn_login_facebook">Facebook</string>
     <string name="label_btn_login_google">Google</string>
+
+    <!-- label switch -->
+    <string name="label_sw_term_promotion">Tôi muốn nhận các khuyễn mãi độc quyền qua email</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

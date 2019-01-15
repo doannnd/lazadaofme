@@ -72,15 +72,26 @@
     <!-- hint edit text -->
     <string name="hint_email_address">Email address</string>
     <string name="hint_password">Password</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_repeat_password">Repeat password</string>
 
     <!-- label text view -->
     <string name="label_tv_forgot_password">Forgot password ?</string>
     <string name="label_tv_or_login_with">Or login with</string>
+    <string name="label_tv_or_register_with">Or register with</string>
+    <string name="label_tv_enter_all_item">Need enter all item</string>
+    <string name="label_tv_term_password">Password must include at least 6 character and 1 uppercase</string>
+    <string name="label_tv_term_policy">I read and understand <u><font color="blue">security</font></u> <u><font color="blue">terms</font></u> of Lazada</string>
 
     <!-- label button -->
     <string name="label_btn_login">Login</string>
+    <string name="label_btn_register">Register</string>
     <string name="label_btn_login_facebook">Facebook</string>
     <string name="label_btn_login_google">Google</string>
+
+    <!-- label switch -->
+    <string name="label_sw_term_promotion">I want to receive exclusive promotions via email</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

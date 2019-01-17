@@ -55,7 +55,8 @@ public class ClearableEditText extends AppCompatEditText implements
     private void showClearIcon(boolean isShow) {
         Drawable[] drawables = getCompoundDrawables();
         // draw icon on edit text
-        setCompoundDrawablesWithIntrinsicBounds(drawables[0], drawables[1], isShow ? mClearIcon : null, drawables[3]);
+        setCompoundDrawablesWithIntrinsicBounds(drawables[0], drawables[1],
+                isShow ? mClearIcon : null, drawables[3]);
     }
 
     @Override
@@ -99,5 +100,7 @@ public class ClearableEditText extends AppCompatEditText implements
         }
         return false;
     }
+
+
 
 }

@@ -9,6 +9,7 @@ import com.example.doannd.lazadaofme.R;
 
 public class SplashActivity extends AppCompatActivity {
 
+    private static final String TAG = SplashActivity.class.getSimpleName();
     private static final int SPLASH_TIME_OUT = 3000;
 
     @Override

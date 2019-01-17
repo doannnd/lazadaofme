@@ -15,6 +15,8 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private static final String TAG = LoginActivity.class.getSimpleName();
+
     @BindView(R.id.activity_login_toolbar)
     Toolbar mToolbar;
     @BindView(R.id.activity_login_tab_layout)
@@ -29,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         setupUi();
+
     }
 
     private void setupUi() {

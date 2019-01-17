@@ -74,6 +74,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/fragment_login_btn_login_facebook"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -86,6 +87,7 @@
             android:drawableStart="@drawable/ic_login_facebook"/>
 
         <Button
+            android:id="@+id/fragment_login_btn_login_google"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/padding_medium"

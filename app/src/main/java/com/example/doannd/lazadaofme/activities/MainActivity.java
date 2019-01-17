@@ -20,6 +20,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = MainActivity.class.getSimpleName();
+
     @BindView(R.id.activity_main_toolbar)
     Toolbar mToolbar;
     @BindView(R.id.activity_main_drawer_layout)

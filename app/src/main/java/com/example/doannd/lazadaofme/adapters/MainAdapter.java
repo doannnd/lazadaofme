@@ -1,4 +1,4 @@
-package com.example.doannd.lazadaofme.adapter;
+package com.example.doannd.lazadaofme.adapters;
 
 import android.content.Context;
 import android.support.annotation.Nullable;

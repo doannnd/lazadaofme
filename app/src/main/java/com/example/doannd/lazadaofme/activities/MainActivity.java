@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.doannd.lazadaofme.adapter.MainAdapter;
+import com.example.doannd.lazadaofme.adapters.MainAdapter;
 import com.example.doannd.lazadaofme.R;
 
 import butterknife.BindView;

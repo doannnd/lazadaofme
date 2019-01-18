@@ -31,8 +31,11 @@ dependencies {
     implementation "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
 
-    // google play services
+    // google play services (google login)
     implementation "com.google.android.gms:play-services-auth:$rootProject.googlePlayServiceVersion"
+
+    // facebook login
+    implementation "com.facebook.android:facebook-login:$rootProject.facebookLoginVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

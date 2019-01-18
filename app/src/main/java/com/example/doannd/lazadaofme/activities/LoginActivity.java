@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.example.doannd.lazadaofme.R;
-import com.example.doannd.lazadaofme.adapter.LoginAdapter;
+import com.example.doannd.lazadaofme.adapters.LoginAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

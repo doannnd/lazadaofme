@@ -34,6 +34,7 @@ ext {
     supportLibraryVersion = '28.0.0'
     butterKnifeVersion = '8.8.1'
     googlePlayServiceVersion = '16.0.1'
+    facebookLoginVersion = '[4,5)'
 
 
 }

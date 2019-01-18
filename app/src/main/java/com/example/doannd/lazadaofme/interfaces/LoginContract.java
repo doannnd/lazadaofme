@@ -1,5 +1,8 @@
 package com.example.doannd.lazadaofme.interfaces;
 
+import android.content.Context;
+import android.content.Intent;
+
 import com.example.doannd.lazadaofme.domain.UserDTO;
 
 public interface LoginContract {
@@ -8,6 +11,10 @@ public interface LoginContract {
 
         void login(UserDTO userCredentials);
 
+        void loginGoogle(Context context);
+
+        void loginFacebook();
+
         void isLoggedIn();
 
         void onLoginResponse(boolean isLoginSuccess);
@@ -15,6 +22,9 @@ public interface LoginContract {
         void onError(String message);
 
         void isLoggedIn(boolean isLoggedIn);
+
+        void onActivityResult(int requestCode, int resultCode, Intent data);
+
     }
 
     interface LoginPresenterToView {
@@ -28,10 +38,16 @@ public interface LoginContract {
         void onError(String message);
 
         void isLoggedIn(boolean isLoggedIn);
+
+        void onActivityResult(int requestCode, int resultCode, Intent data);
     }
 
     interface LoginPresenterToModel {
         void login(UserDTO userCredentials);
+
+        void loginGoogle(Context context);
+
+        void loginFacebook();
 
         void isLoggedIn();
     }

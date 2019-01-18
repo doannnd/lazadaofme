@@ -22,6 +22,8 @@ import android.widget.ProgressBar;
 import com.example.doannd.lazadaofme.R;
 import com.example.doannd.lazadaofme.activities.LoginActivity;
 import com.example.doannd.lazadaofme.activities.MainActivity;
+import com.example.doannd.lazadaofme.interfaces.LoginContract;
+import com.example.doannd.lazadaofme.presenters.LoginPresenter;
 import com.example.doannd.lazadaofme.utils.CommonUtils;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -44,9 +46,13 @@ import java.util.Objects;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LoginFragment extends Fragment implements View.OnClickListener {
+public class LoginFragment extends Fragment implements View.OnClickListener,
+        LoginContract.LoginPresenterToView {
+
+    private static final String TAG = LoginFragment.class.getSimpleName();
 
     private static final String ARG_PARAM1 = "param1";
+    private static final int GOOGLE_SIGN_IN_REQUEST_CODE = 9001;
 
     @BindView(R.id.fragment_login_btn_login_google)
     Button btnLoginGoogle;
@@ -54,6 +60,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     Button btnLoginFacebook;
 
     private String mParam1;
+    private LoginContract.LoginToPresenter mLoginToPresenter;
 
     public LoginFragment() {
         // Required empty public constructor
@@ -74,12 +81,19 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
         // handle event in fragment login
         btnLoginGoogle.setOnClickListener(this);
         btnLoginFacebook.setOnClickListener(this);
-
-        return view;
+        // login presenter
+        mLoginToPresenter = new LoginPresenter(this);
+        mLoginToPresenter.isLoggedIn();
     }
 
     @Override
@@ -87,29 +101,52 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         int id = v.getId();
         switch (id) {
             case R.id.fragment_login_btn_login_google: {
-                // TODO:
                 singInGoogle();
                 break;
             }
             case R.id.fragment_login_btn_login_facebook: {
-                // TODO:
                 singInFacebook();
                 break;
             }
             default: {
-                // TODO:
             }
         }
     }
 
     private void singInFacebook() {
+        mLoginToPresenter.loginFacebook();
     }
 
     private void singInGoogle() {
+        mLoginToPresenter.loginGoogle(getActivity());
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
     }
 
+    @Override
+    public void showProgress() {
+
+    }
+
+    @Override
+    public void hideProgress() {
+
+    }
+
+    @Override
+    public void onLoginResponse(boolean isLoginSuccess) {
+
+    }
+
+    @Override
+    public void onError(String message) {
+
+    }
+
+    @Override
+    public void isLoggedIn(boolean isLoggedIn) {
+
+    }
 }

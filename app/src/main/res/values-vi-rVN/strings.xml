@@ -93,7 +93,12 @@
     <string name="label_sw_term_promotion">Tôi muốn nhận các khuyễn mãi độc quyền qua email</string>
 
     <!-- message dialog -->
-    <string name="message_dialog_loading">Tải…</string>
+    <string name="dialog_message_loading">Tải…</string>
+
+    <!-- error message -->
+    <string name="error_message_login">Đăng nhập thất bại</string>
+    <string name="error_message_title">Lỗi</string>
+    <string name="lable_ok">Đồng ý</string>
 
     <!-- facebook id -->
     <string name="facebook_app_id">2244633075602222</string>

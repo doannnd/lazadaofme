@@ -4,51 +4,54 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.doannd.lazadaofme.domain.UserDTO;
+import com.example.doannd.lazadaofme.fragments.LoginFragment;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.tasks.Task;
 
 public interface LoginContract {
 
     interface LoginToPresenter {
-
-        void login(UserDTO userCredentials);
-
-        void loginGoogle(Context context);
-
-        void loginFacebook();
+        void signIn(UserDTO userCredentials);
 
         void isLoggedIn();
+
+        void signInFacebook(LoginFragment loginFragment);
+
+        void signInGoogle(LoginFragment loginFragment);
+
+        void onActivityResult(LoginFragment loginFragment, int requestCode, int resultCode, Intent data);
 
         void onLoginResponse(boolean isLoginSuccess);
 
         void onError(String message);
 
         void isLoggedIn(boolean isLoggedIn);
-
-        void onActivityResult(int requestCode, int resultCode, Intent data);
 
     }
 
     interface LoginPresenterToView {
-
-        void showProgress();
-
-        void hideProgress();
-
         void onLoginResponse(boolean isLoginSuccess);
 
         void onError(String message);
 
         void isLoggedIn(boolean isLoggedIn);
 
-        void onActivityResult(int requestCode, int resultCode, Intent data);
+        void showLoading();
+
+        void hideLoading();
     }
 
     interface LoginPresenterToModel {
-        void login(UserDTO userCredentials);
-
-        void loginGoogle(Context context);
-
-        void loginFacebook();
+        void signIn(UserDTO userCredentials);
 
         void isLoggedIn();
+
+        void signInFacebook(LoginFragment loginFragment);
+
+        void signInGoogle(LoginFragment loginFragment);
+
+        void onActivityResult(LoginFragment loginFragment, int requestCode, int resultCode, Intent data);
+
     }
 }

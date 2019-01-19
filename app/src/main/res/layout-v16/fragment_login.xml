@@ -1,106 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center_horizontal"
-    android:background="@color/colorWhite"
-    android:orientation="vertical"
-    android:paddingTop="@dimen/padding_large"
-    android:paddingLeft="@dimen/padding_large"
-    android:paddingRight="@dimen/padding_large">
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:hintTextAppearance="@style/TextInputLayoutTextAppearance">
-
-        <com.example.doannd.lazadaofme.widget.ClearableEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/edit_text_email_height"
-            android:hint="@string/hint_email_address"
-            android:textSize="@dimen/text_size_toolbar"
-            android:inputType="textEmailAddress"
-            android:maxLength="32"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding_large"
-        app:hintTextAppearance="@style/TextInputLayoutTextAppearance"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/colorGrayLight">
-
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_password"
-            android:textSize="@dimen/text_size_toolbar"
-            android:inputType="textPassword"
-            android:maxLength="12"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding_standard"
-        android:layout_gravity="end"
-        android:text="@string/label_tv_forgot_password"
-        android:textColor="@color/colorAccent"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding_standard"
-        android:background="@color/colorOrangeDark"
-        android:text="@string/label_btn_login"
-        android:textColor="@color/colorWhite"
-        android:fontFamily="sans-serif"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding_standard"
-        android:text="@string/label_tv_or_login_with"
-        android:textColor="@color/colorBlack"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding_small"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_large"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextInputLayoutTextAppearance">
+
+            <com.example.doannd.lazadaofme.widget.ClearableEditText
+                android:id="@+id/fragment_login_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_email_height"
+                android:hint="@string/hint_email_address"
+                android:textSize="@dimen/text_size_toolbar"
+                android:inputType="textEmailAddress"
+                android:maxLength="32"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_large"
+            app:hintTextAppearance="@style/TextInputLayoutTextAppearance"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorGrayLight">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/fragment_login_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:textSize="@dimen/text_size_toolbar"
+                android:inputType="textPassword"
+                android:maxLength="12"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_standard"
+            android:layout_gravity="end"
+            android:text="@string/label_tv_forgot_password"
+            android:textColor="@color/colorAccent"/>
 
         <Button
-            android:id="@+id/fragment_login_btn_login_facebook"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_button_facebook"
-            android:text="@string/label_btn_login_facebook"
-            android:textColor="@color/colorBlue"
-            android:textAllCaps="false"
-            android:fontFamily="sans-serif"
-            android:drawableLeft="@drawable/ic_login_facebook"
-            android:drawableStart="@drawable/ic_login_facebook"/>
+            android:id="@+id/fragment_login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_standard"
+            android:background="@color/colorOrangeDark"
+            android:text="@string/label_btn_login"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif"/>
 
-        <Button
-            android:id="@+id/fragment_login_btn_login_google"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/padding_medium"
-            android:layout_marginStart="@dimen/padding_medium"
-            android:layout_weight="1"
-            android:background="@drawable/bg_button_google"
-            android:text="@string/label_btn_login_google"
-            android:textColor="@color/colorRed"
-            android:textAllCaps="false"
-            android:fontFamily="sans-serif"
-            android:drawableLeft="@drawable/ic_login_google"
-            android:drawableStart="@drawable/ic_login_google"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_standard"
+            android:text="@string/label_tv_or_login_with"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fragment_login_btn_login_facebook"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_facebook"
+                android:text="@string/label_btn_login_facebook"
+                android:textColor="@color/colorBlue"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/ic_login_facebook"
+                android:drawableStart="@drawable/ic_login_facebook"
+                style="?android:attr/buttonBarStyle"/>
+
+            <Button
+                android:id="@+id/fragment_login_btn_login_google"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginStart="@dimen/padding_medium"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_google"
+                android:text="@string/label_btn_login_google"
+                android:textColor="@color/colorRed"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/ic_login_google"
+                android:drawableStart="@drawable/ic_login_google"
+                style="?android:attr/buttonBarStyle"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+    <ProgressBar
+        android:id="@+id/fragment_login_pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

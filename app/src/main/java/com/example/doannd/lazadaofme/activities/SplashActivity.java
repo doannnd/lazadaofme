@@ -1,12 +1,11 @@
 package com.example.doannd.lazadaofme.activities;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.example.doannd.lazadaofme.R;
-import com.example.doannd.lazadaofme.utils.CommonUtils;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                CommonUtils.startMainActivity(SplashActivity.this);
+                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 // close this activity
                 finish();
             }

@@ -93,12 +93,17 @@
     <string name="label_sw_term_promotion">I want to receive exclusive promotions via email</string>
 
     <!-- message dialog -->
-    <string name="message_dialog_loading">Loading…</string>
+    <string name="dialog_message_loading">Loading…</string>
 
     <!-- facebook id -->
     <string name="facebook_app_id">2244633075602222</string>
     <string name="fb_login_protocol_scheme">fb2244633075602222</string>
 
+    <!-- error message -->
+    <string name="error_message_login">Login failed</string>
+    <string name="error_message_title">Error</string>
+    <string name="lable_ok">OK</string>
+N
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
